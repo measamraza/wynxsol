@@ -1,0 +1,133 @@
+/* ============================================================================
+   WYNX SOLUTIONS — MONOCHROMATIC DESIGN TOKENS
+   BLACK. WHITE. CHROME.
+   Pure obsidian/charcoal surfaces, crisp white typography, liquid silver metal.
+   Zero blue, zero cyan, zero neon accents.
+   ============================================================================ */
+
+:root {
+  /* Typography */
+  --font-display: 'Switzer', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --font-sans: 'Switzer', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Continuous Dark Studio Surface Elevation Scale (Default) */
+  --surface-pitch: #000000;
+  --surface-obsidian: #070708;
+  --surface-charcoal: #0E0E10;
+  --surface-graphite: #151518;
+  --surface-panel: #1B1B1F;
+
+  /* Crisp Monochrome Typography */
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.70);
+  --text-muted: rgba(255, 255, 255, 0.44);
+  --text-subtle: rgba(255, 255, 255, 0.24);
+
+  /* Architectural Hairlines */
+  --hairline: rgba(255, 255, 255, 0.11);
+  --hairline-strong: rgba(255, 255, 255, 0.24);
+
+  /* Realistic Metallic Silver & Polished Chrome */
+  --chrome-highlight: #F4F5F7;
+  --chrome-mid: #A8ADB5;
+  --chrome-dark: #4A4D54;
+  --chrome-gradient: linear-gradient(
+    135deg,
+    #FFFFFF 0%,
+    #D8DCE3 34%,
+    #7A7F88 64%,
+    #F2F4F7 100%
+  );
+  --light-shadow-text: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #E4E4E7 58%,
+    rgba(255, 255, 255, 0.36) 100%
+  );
+  --accent-ink: #050506;
+
+  /* Surface-Responsive Compatibility Aliases */
+  --bg-black: var(--surface-pitch);
+  --bg-elevated: var(--surface-charcoal);
+  --text-white: var(--text-primary);
+  --text-white-muted: var(--text-secondary);
+  --text-white-dim: var(--text-muted);
+  --hairline-dark: var(--hairline);
+  --hairline-dark-strong: var(--hairline-strong);
+  --surface-light: var(--surface-charcoal);
+  --ink-light: var(--text-primary);
+  --ink-light-muted: var(--text-secondary);
+  --ink-light-dim: var(--text-muted);
+  --hairline-light: var(--hairline);
+  --hairline-light-strong: var(--hairline-strong);
+
+  /* Type Scale */
+  --text-xs: clamp(0.72rem, 0.7rem + 0.1vw, 0.8rem);
+  --text-sm: clamp(0.84rem, 0.82rem + 0.14vw, 0.94rem);
+  --text-base: clamp(0.96rem, 0.92rem + 0.16vw, 1.04rem);
+  --text-lg: clamp(1.12rem, 1.04rem + 0.3vw, 1.32rem);
+  --text-xl: clamp(1.45rem, 1.2rem + 1.1vw, 2.25rem);
+  --text-2xl: clamp(2.1rem, 1.55rem + 2.3vw, 3.6rem);
+  --text-3xl: clamp(2.55rem, 1.8rem + 3.2vw, 4.85rem);
+  --text-hero: clamp(2.8rem, 1.65rem + 5.2vw, 7.2rem);
+
+  /* Architectural Radii */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 9999px;
+
+  --gutter: clamp(1.25rem, 3.2vw, 3rem);
+  --container-max: 1440px;
+
+  /* Motion Curves */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-fast: 0.3s var(--ease-out);
+  --transition: 0.5s var(--ease-out);
+  --transition-slow: 0.8s var(--ease-out);
+
+  /* Layering */
+  --z-hairlines: 5;
+  --z-base: 10;
+  --z-sticky: 40;
+  --z-hud: 80;
+  --z-nav: 100;
+  --z-drawer: 120;
+  --z-modal: 200;
+  --z-curtain: 250;
+  --z-cursor: 400;
+}
+
+/* Optional Light Gallery Mode (pure neutral grey/white inversion — safe for photos & chrome) */
+html[data-surface-mode="light"] {
+  --surface-pitch: #F5F5F6;
+  --surface-obsidian: #EFEFF1;
+  --surface-charcoal: #E6E6EA;
+  --surface-graphite: #FFFFFF;
+  --surface-panel: #FBFBFB;
+
+  --text-primary: #09090B;
+  --text-secondary: rgba(9, 9, 11, 0.70);
+  --text-muted: rgba(9, 9, 11, 0.48);
+  --text-subtle: rgba(9, 9, 11, 0.26);
+
+  --hairline: rgba(9, 9, 11, 0.11);
+  --hairline-strong: rgba(9, 9, 11, 0.25);
+
+  --chrome-gradient: linear-gradient(
+    135deg,
+    #09090B 0%,
+    #3F3F46 42%,
+    #71717A 72%,
+    #18181B 100%
+  );
+  --light-shadow-text: linear-gradient(
+    180deg,
+    #09090B 0%,
+    #27272A 64%,
+    rgba(9, 9, 11, 0.42) 100%
+  );
+  --accent-ink: #FFFFFF;
+}

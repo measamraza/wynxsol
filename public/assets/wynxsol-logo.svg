@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="248 158 522 230" fill="none" role="img" aria-label="WynxSol WS Monogram">
+  <defs>
+    <linearGradient id="wynxChromeGrad" x1="260" y1="165" x2="740" y2="375" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="22%" stop-color="#D4DCE6" />
+      <stop offset="44%" stop-color="#535D6C" />
+      <stop offset="56%" stop-color="#EEF2F7" />
+      <stop offset="78%" stop-color="#697587" />
+      <stop offset="100%" stop-color="#C8D0DC" />
+    </linearGradient>
+    <linearGradient id="wynxEdgeSheen" x1="270" y1="175" x2="720" y2="365" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.96" />
+      <stop offset="50%" stop-color="#D4D4D8" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#27272A" stop-opacity="0.92" />
+    </linearGradient>
+  </defs>
+  <!-- Left W diagonal wing -->
+  <path
+    d="M 272 181 L 333 181 L 425 324 L 496 324 L 509 336 L 486 364 L 388 364 Z"
+    fill="url(#wynxChromeGrad)"
+    stroke="url(#wynxEdgeSheen)"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+  <!-- Center W architectural caret -->
+  <path
+    d="M 416 268 L 464 183 L 494 183 L 575 314 L 545 356 L 479 257 L 443 308 Z"
+    fill="url(#wynxChromeGrad)"
+    stroke="url(#wynxEdgeSheen)"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+  <!-- Right geometric S monogram -->
+  <path
+    d="M 595 182 L 717 182 L 745 217 L 624 217 L 616 226 L 713 313 L 678 364 L 560 364 L 589 324 L 658 324 L 661 315 L 560 223 Z"
+    fill="url(#wynxChromeGrad)"
+    stroke="url(#wynxEdgeSheen)"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+</svg>
